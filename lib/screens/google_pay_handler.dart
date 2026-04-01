@@ -85,7 +85,7 @@ class GooglePayHandler {
       }
 
       Map<String, dynamic> genarateWalletTokenReq = {
-        "client_key": "51760e803526ae483f06f9ea7c61ba26", //clientKey
+        "client_key": "${bodyParams["client_key"]}", //clientKey
         "domain": "https://www.novalnet.com/",
         "is_pending_transaction": false,
         "payment_method": "GOOGLEPAY",
